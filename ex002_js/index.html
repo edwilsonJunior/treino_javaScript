@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>modelo de exercicio</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        section{
+            background-color: rgb(196, 188, 188);
+            height: 200px;
+            width: 330px;
+            text-align: left;
+            margin: auto;
+            border-radius: 30px;
+            padding: 10px 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <section>
         <p>quantidades de km percorridos <br>(R$0,15 por Km rodado.):</p>
         <input type="number" id="valor_percorrido">
         <p>dias alugados <br> (R$60 por dia):</p>
-        <input type="number" id="dias_alugado">
+        <input type="number" id="valor_percorrido">
+        <button onclick="resultado()">verificar</button>
         <div id="valor_a_pagar"></div>
+        
     </section>
 
     <script src="ex002.js"></script>
