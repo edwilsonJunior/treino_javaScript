@@ -2,11 +2,11 @@
 //criar uma variável acumuladora, para que eu possa guardar o valor da minha repetição
 let soma = 0
 //contador que vai de 1 a 1000.
-for (let i = 1; i <= 1000; i++)/*definir o que é um número que é multiplo de 3 ou 5*/ 
+for (let c = 1; c <= 1000; c++)/*definir o que é um número que é multiplo de 3 ou 5*/ 
   {
-    if(i % 3 === 0  || i % 5 === 0 )//se for multiplo some
+    if(c % 3 === 0  || c % 5 === 0 )//se for multiplo some
     {
-      soma += i //somar todos os números que são multiplos de 3 ou 5
+      soma += c //somar todos os números que são multiplos de 3 ou 5
     }
   }
   //dar o resultado
