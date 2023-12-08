@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color:#5DB7DE ;
+            padding: 10px;
+            display: flex;
+            height: 45px;
+        }
+        .logo{
+            color: white;
+            font-size: 20px;
+            width: 50%;
+        }
+        .logo a{
+            text-decoration: none;
+            color: black;
+        }
+        .menu{
+            position: absolute;
+            left: 0;
+            top: 45px;
+            width:100% ;
+            background-color: #f1e9db;
+            text-align: center;
+            overflow: hidden;
+            opacity: 0;
+        }
+        .hide{
+            transition: 1s;
+            opacity: 0;
+            height: 0;
+            
+        }
+        .show{
+            transition:1s;
+            opacity: 1;
+            height: 150px;
+        }
+        .menu a{
+            display: inline-block;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #07020D;
+            font-size: 23px;
+        }
+        .menu a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        .icon-menu{
+            width: 50%;
+            text-align: right;
+            
+        }
+        .icon-menu svg{
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <div class="logo"><a href="#">Dankin code</a></div>
+            <br>
+            <div class="icon-menu"><i class="fa-solid fa-bars"></i></div>
+            <div class="menu hide" id="menu">
+            <a href="#">Home</a>
+            <br>
+            <a href="#">Sobre</a>
+            <br>
+            <a href="#">Contato</a>
+    </header>
+            
+    <script src="imports/all.min.js"></script>
+    <script>
+        var iconMenu = document.querySelectorAll('.icon-menu')
+        iconMenu[0].addEventListener('click', ()=>{
+            //efeito de opacidade
+            /*let menu = document.getElementById("menu")
+            if(menu.classList.contains('hide')){
+                menu.classList.add('show');
+            menu.classList.remove("hide")
+            }else{
+                menu.classList.add("hide")
+                menu.classList.remove("show")
+            }*/
+            //efeito de toggle
+            let menu = document.getElementById("menu")
+            if(menu.classList.contains('hide')){
+                menu.classList.add('show');
+            menu.classList.remove("hide")
+            }else{
+                menu.classList.add("hide")
+                menu.classList.remove("show")
+            }
+            
+            
+        });
+    </script>
+</body>
+</html>
